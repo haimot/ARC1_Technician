@@ -1,0 +1,5 @@
+AOA
+port	     COM6
+azimuth      35
+elevation    20
+results      result_AOA_test.txt

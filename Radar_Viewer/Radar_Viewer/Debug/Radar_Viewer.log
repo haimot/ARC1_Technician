@@ -1,0 +1,22 @@
+﻿  C_CartesianPoint.cpp
+  C_Data_Recording.cpp
+  C_Detections.cpp
+C_Detections.cpp(713): warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+  C_GUI_Status.cpp
+C_GUI_Status.cpp(130): warning C4005: 'ZERO_PADDING' : macro redefinition
+          C:\Program Files (x86)\Windows Kits\8.1\Include\um\wincrypt.h(490) : see previous definition of 'ZERO_PADDING'
+  C_Lat_Lon_Map.cpp
+  C_Obstacles_Map.cpp
+  C_Point2D.cpp
+  C_Point2DInt.cpp
+  C_Position.cpp
+  C_Radar_Post.cpp
+  C_Radar_Route.cpp
+  C_Radar_Viewer.cpp
+  C_RDM.cpp
+  C_SCREEN_VIDEO.cpp
+  C_SphericalPoint.cpp
+  C_UTM_Coordinates.cpp
+  Generating Code...
+  .NETFramework,Version=v4.5.AssemblyAttributes.cpp
+Debug\C_CartesianPoint.obj : fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SYSTEM_status">
+      <UniqueIdentifier>{464e06e6-cfc3-45aa-9dc2-18545659a270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SYSTEM_status">
+      <UniqueIdentifier>{a1ca89b5-1589-48e0-97e8-7fea3bd306b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Real_Time_Thread">
+      <UniqueIdentifier>{31b67270-1a6f-48d6-81b0-19d80b52664d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Real_Time_Thread">
+      <UniqueIdentifier>{3456f5f4-0221-47c0-8200-c1fb40536296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main_Thread">
+      <UniqueIdentifier>{9943659a-bb09-4bcb-b342-ee6d01ec8619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main_Thread">
+      <UniqueIdentifier>{52956e84-3d9f-4b66-aaff-0f584b6019bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Display_Polar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Scope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C_SYSTEM_status.cpp">
+      <Filter>Source Files\SYSTEM_status</Filter>
+    </ClCompile>
+    <ClCompile Include="Real_Time_Thread.cpp">
+      <Filter>Source Files\Real_Time_Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Recovery_Flight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main_Thread.cpp">
+      <Filter>Source Files\Main_Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Container_Status.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Lab_Calibrator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Lab_ROT2PROG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Loading_Page.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ARC1_Technician.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Display_Polar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Scope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C_SYSTEM_status.h">
+      <Filter>Header Files\SYSTEM_status</Filter>
+    </ClInclude>
+    <ClInclude Include="Real_Time_Thread.h">
+      <Filter>Header Files\Real_Time_Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Recovery_Flight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main_Thread.h">
+      <Filter>Header Files\Main_Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Container_Status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T_SYSTEM_control_0.h">
+      <Filter>Header Files\SYSTEM_status</Filter>
+    </ClInclude>
+    <ClInclude Include="T_SYSTEM_control_1.h">
+      <Filter>Header Files\SYSTEM_status</Filter>
+    </ClInclude>
+    <ClInclude Include="T_ARC_status.h">
+      <Filter>Header Files\SYSTEM_status</Filter>
+    </ClInclude>
+    <ClInclude Include="T_DATA_download.h">
+      <Filter>Header Files\SYSTEM_status</Filter>
+    </ClInclude>
+    <ClInclude Include="T_DEBUG_frees.h">
+      <Filter>Header Files\SYSTEM_status</Filter>
+    </ClInclude>
+    <ClInclude Include="T_SNAPSHOT_descriptor.h">
+      <Filter>Header Files\SYSTEM_status</Filter>
+    </ClInclude>
+    <ClInclude Include="T_BUL_config.h">
+      <Filter>Header Files\SYSTEM_status</Filter>
+    </ClInclude>
+    <ClInclude Include="T_SensorData_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T_RecyclingFifo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Lab_Calibrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Lab_ROT2PROG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Loading_Page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scope.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display_Polar.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recovery_Flight.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading_Page.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ARC1_Technician1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="App.config" />
+  </ItemGroup>
+</Project>

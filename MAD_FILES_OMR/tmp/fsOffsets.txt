@@ -1,0 +1,7 @@
+mal_app:	0x1000
+nml:	0xA000
+core_0:	0xB2A0
+core_1:	0xC3B90
+arCore0core_0:	0x108B70
+arCore1core_1:	0x108C00
+appdepcfg:	0x108CA0

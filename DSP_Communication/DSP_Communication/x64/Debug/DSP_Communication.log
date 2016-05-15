@@ -1,0 +1,5 @@
+﻿  C_DSP_Communication.cpp
+  C_Ethernet_TCP_Client.cpp
+  Generating Code...
+.NETFramework,Version=v4.5.AssemblyAttributes.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  DSP_Communication.vcxproj -> C:\Users\user\Documents\GitHub\Monitor\Current_Version\ARC1_Technician\x64\Debug\DSP_Communication.lib

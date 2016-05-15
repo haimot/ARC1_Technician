@@ -1,0 +1,31 @@
+{
+	"deviceName" : "C6678",
+	
+	"partitions" : [
+		{
+			"name"			: "load-partition",
+			"vaddr"			: "0x9e000000",
+			"size"			: "0x2000000",
+			"loadPartition" : true 
+		}
+	],
+	
+	"applications" : [
+		{
+			"name"			 : "core_0",
+			"fileName"       : "ARC1_CORE0.out",
+			"allowedCores"   : [0]
+		}
+	],
+	
+	"appDeployment" : [
+		"core_0",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	]
+}

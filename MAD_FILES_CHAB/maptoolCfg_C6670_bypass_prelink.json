@@ -1,0 +1,9 @@
+{
+	"deploymentCfgFile" : "deployment_template_C6670_bypass_prelink.json",
+	"LoadImageName"     : "ARC1.bin",
+	"prelinkExe"        : "prelink6x",
+	"ofdTool"           : "ofd6x",
+	"stripExe"          : "strip6x",
+	"malApp"            : "mal_app.exe",
+	"nmlLoader"         : "nml.exe"
+}

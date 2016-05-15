@@ -1,0 +1,8 @@
+Doppler
+port		COM3
+From		-50
+to		37
+step		2
+repeat		1
+SNR		20
+results 	result_Doppler_test.txt

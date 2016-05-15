@@ -1,0 +1,23 @@
+﻿  Container_Status.cpp
+  C_Lab_Calibrator.cpp
+  C_Lab_ROT2PROG.cpp
+  C_Scope.cpp
+  C_SYSTEM_status.cpp
+  Display_Polar.cpp
+  Main.cpp
+  Main_Thread.cpp
+  MyForm.cpp
+  Loading_Page.cpp
+  Real_Time_Thread.cpp
+  Recovery_Flight.cpp
+  Scope.cpp
+  Generating Code...
+Real_Time_Thread.obj : warning LNK4248: unresolved typeref token (01000016) for 'engine'; image may not run
+MyForm.obj : warning LNK4248: unresolved typeref token (01000022) for 'engine'; image may not run
+Main_Thread.obj : warning LNK4248: unresolved typeref token (01000023) for 'engine'; image may not run
+Main.obj : warning LNK4248: unresolved typeref token (01000023) for 'engine'; image may not run
+Real_Time_Thread.obj : warning LNK4248: unresolved typeref token (01000024) for 'mxArray_tag'; image may not run
+opencv_ts249d.lib(ts_gtest.obj) : warning LNK4099: PDB 'opencv_ts249d.pdb' was not found with 'opencv_ts249d.lib(ts_gtest.obj)' or at 'C:\Users\user\Documents\GitHub\Working\Monitor\Current_Version\ARC1_Technician\x64\Debug\opencv_ts249d.pdb'; linking object as if no debug info
+opencv_ts249d.lib(ts_perf.obj) : warning LNK4099: PDB 'opencv_ts249d.pdb' was not found with 'opencv_ts249d.lib(ts_perf.obj)' or at 'C:\Users\user\Documents\GitHub\Working\Monitor\Current_Version\ARC1_Technician\x64\Debug\opencv_ts249d.pdb'; linking object as if no debug info
+opencv_ts249d.lib(opencv_ts_pch.obj) : warning LNK4099: PDB 'opencv_ts249d.pdb' was not found with 'opencv_ts249d.lib(opencv_ts_pch.obj)' or at 'C:\Users\user\Documents\GitHub\Working\Monitor\Current_Version\ARC1_Technician\x64\Debug\opencv_ts249d.pdb'; linking object as if no debug info
+  ARC1_Technician.vcxproj -> C:\Users\user\Documents\GitHub\Working\Monitor\Current_Version\ARC1_Technician\x64\Debug\ARC1_Technician.exe

@@ -1,0 +1,740 @@
+  ARC1_Technician.Display_Polar.resources - Embedded, ContainedInManifestFile, 
+  ARC1_Technician.MyForm.resources - Embedded, ContainedInManifestFile, 
+  ARC1_Technician.Loading_Page.resources - Embedded, ContainedInManifestFile, 
+  ARC1_Technician.Recovery_Flight.resources - Embedded, ContainedInManifestFile, 
+  ARC1_Technician.Scope.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly ARC1_Technician, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91: 
+	hash=None, flags=None
+Assembly Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91: 
+	hash=None, flags=None
+Assembly PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class DSP_Communication.C_Ethernet_TCP_Client: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Ethernet_TCP_Connect(Int32): PrivateScope, Public, HideBySig
+    Ethernet_TCP_Disconnect(): PrivateScope, Public, HideBySig
+    Ethernet_TCP_Send(SByte*, Int32): PrivateScope, Public, HideBySig
+    Ethernet_TCP_Receive(SByte*, Int32, Int32*): PrivateScope, Public, HideBySig
+    Ethernet_TCP_GOOD(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DSP_Communication.C_DSP_Communication: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    SByte* client_recording_status : Public
+    SByte* client_messaging_status : Public
+    SByte* client_buffer_pointer : Public
+    Int32 client_buffer_size IsVolatile : Public
+  Methods:
+    DSP_connect(): PrivateScope, Public, HideBySig
+    DSP_disconnect(): PrivateScope, Public, HideBySig
+    DSP_command(Int32): PrivateScope, Public, HideBySig
+    DSP_send(Int32, SByte*, Int32): PrivateScope, Public, HideBySig
+    DSP_receive(Int32, SByte*, Int32): PrivateScope, Public, HideBySig
+    DSP_send_BUL_image(SByte*, T_BUL_config*): PrivateScope, Public, HideBySig
+    DSP_snapshot_command(T_SNAPSHOT_descriptor*): PrivateScope, Public, HideBySig
+    DSP_read_SYSTEM_status_task(): PrivateScope, Public, HideBySig
+    DSP_read_SYSTEM_status(SByte*, Int32): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class C_Point2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(C_Point2D): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Y   'get set' : 
+    Double X   'get set' : 
+  Methods:
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Double): PrivateScope, Public, HideBySig, SpecialName
+    Norm(): PrivateScope, Public, HideBySig
+    Distance_between_points(C_Point2D IsByValue): PrivateScope, Public, HideBySig
+    Distance_between_pointsVersion_2(C_Point2D IsByValue): PrivateScope, Public, HideBySig
+    Distance_between_point_and_line(C_Point2D IsByValue, C_Point2D IsByValue): PrivateScope, Public, HideBySig
+    Line_angle(C_Point2D IsByValue, C_Point2D IsByValue): PrivateScope, Public, HideBySig
+    Line_point_projection(C_Point2D&, C_Point2D IsByValue, C_Point2D IsByValue): PrivateScope, Public, HideBySig
+    Rotate(Double): PrivateScope, Public, HideBySig
+    Translate(Double, Double): PrivateScope, Public, HideBySig
+    Translate(C_Point2D IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Scale(Double, Double): PrivateScope, Public, HideBySig
+    op_Assign(C_Point2D IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_AdditionAssignment(C_Point2D IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_SubtractionAssignment(C_Point2D IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_MultiplicationAssignment(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_MultiplicationAssignment(C_Point2D IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(C_Point2D IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Inequality(C_Point2D IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Addition(C_Point2D&, C_Point2D IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Subtraction(C_Point2D&, C_Point2D IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+Class C_Point2DInt: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(C_Point2DInt): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Screen_Y 'get set' : 
+    Int32 Screen_X 'get set' : 
+  Methods:
+    get_Screen_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_Screen_X(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Screen_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Screen_Y(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Point(C_Point2DInt IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    set_Point(Int32, Int32): PrivateScope, Public, HideBySig
+    Distance_between_points(C_Point2DInt IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Rotate(Double): PrivateScope, Public, HideBySig
+    Translate(Int32, Int32): PrivateScope, Public, HideBySig
+    Translate(C_Point2DInt IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Scale(Double, Double): PrivateScope, Public, HideBySig
+    op_Assign(Int32* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Assign(C_Point2DInt IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_AdditionAssignment(C_Point2DInt IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_SubtractionAssignment(C_Point2DInt IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_MultiplicationAssignment(Int32): PrivateScope, Public, HideBySig, SpecialName
+    op_MultiplicationAssignment(C_Point2DInt IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+Class C_CartesianPoint: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(C_CartesianPoint): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Z   'get set' : 
+    Double Y   'get set' : 
+    Double X   'get set' : 
+  Methods:
+    get_point2D(C_Point2D&): PrivateScope, Public, HideBySig
+    set_point2D(Double, Double): PrivateScope, Public, HideBySig
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z(Double): PrivateScope, Public, HideBySig, SpecialName
+    Distance_between_points(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Distance_between_point_and_line(C_CartesianPoint IsByValue, C_CartesianPoint IsByValue): PrivateScope, Public, HideBySig
+    Line_angle(C_CartesianPoint IsByValue, C_CartesianPoint IsByValue): PrivateScope, Public, HideBySig
+    Line_point_projection(C_CartesianPoint&, C_CartesianPoint IsByValue, C_CartesianPoint IsByValue): PrivateScope, Public, HideBySig
+    Target_is_in_RADAR_FOV(Single, C_CartesianPoint IsByValue, Int32, Int32): PrivateScope, Public, HideBySig
+    Norm(): PrivateScope, Public, HideBySig
+    Rotate_XY(Double): PrivateScope, Public, HideBySig
+    Translate(Double, Double, Double): PrivateScope, Public, HideBySig
+    Translate(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Scale(Double, Double, Double): PrivateScope, Public, HideBySig
+    op_Assign(Int32* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Assign(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_AdditionAssignment(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_SubtractionAssignment(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_MultiplicationAssignment(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_MultiplicationAssignment(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Inequality(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Addition(C_CartesianPoint&, C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Subtraction(C_CartesianPoint&, C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+Class C_SphericalPoint: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(C_SphericalPoint): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Phi 'get set' : 
+    Double Azimuth 'get set' : 
+    Double Range 'get set' : 
+  Methods:
+    get_Range(): PrivateScope, Public, HideBySig, SpecialName
+    set_Range(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Azimuth(): PrivateScope, Public, HideBySig, SpecialName
+    set_Azimuth(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Phi(): PrivateScope, Public, HideBySig, SpecialName
+    set_Phi(Double): PrivateScope, Public, HideBySig, SpecialName
+    set_Spherical_Point(Double, Double, Double): PrivateScope, Public, HideBySig
+    Convert_Spherical_To_Cartesian(C_CartesianPoint&): PrivateScope, Public, HideBySig
+    Convert_Cartesian_To_Spherical(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    op_Assign(Int32* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Assign(C_SphericalPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_AdditionAssignment(C_SphericalPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_SubtractionAssignment(C_SphericalPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+Class C_UTM_Coordinates: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(C_UTM_Coordinates): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Altitude 'get set' : 
+    Double Longitude 'get set' : 
+    Double Latitude 'get set' : 
+  Methods:
+    get_Latitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Latitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Longitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Longitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Altitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Altitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    Clear(): PrivateScope, Public, HideBySig
+    Is_Clear(): PrivateScope, Public, HideBySig
+    Convert_UTM_To_ECEF(C_CartesianPoint&): PrivateScope, Public, HideBySig
+    Convert_ECEF_To_UTM(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Line_point_projection(C_UTM_Coordinates&, C_UTM_Coordinates IsByValue, C_UTM_Coordinates IsByValue): PrivateScope, Public, HideBySig
+    op_Assign(C_UTM_Coordinates IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Assign(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_Subtraction(C_CartesianPoint&, C_UTM_Coordinates IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Addition(C_UTM_Coordinates&, C_UTM_Coordinates IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Addition(C_UTM_Coordinates&, C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+Class ROD_Position.C_Position: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ROD_Position.C_Position): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(C_Point2DInt): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(C_SphericalPoint): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(C_CartesianPoint): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(C_UTM_Coordinates, C_UTM_Coordinates): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(C_UTM_Coordinates): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Screen_Y 'get set' : 
+    Int32 Screen_X 'get set' : 
+    Double Altitude 'get set' : 
+    Double Longitude 'get set' : 
+    Double Latitude 'get set' : 
+  Methods:
+    get_Object_in_UTM_Position(C_UTM_Coordinates&): PrivateScope, Public, HideBySig
+    set_Object_in_UTM_Position(C_UTM_Coordinates IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    set_Object_in_UTM_Position(Double, Double, Double): PrivateScope, Public, HideBySig
+    get_Object_in_Cartesian_Position(C_CartesianPoint&): PrivateScope, Public, HideBySig
+    set_Object_in_Cartesian_Position(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    set_Object_in_Cartesian_Position(Double, Double, Double): PrivateScope, Public, HideBySig
+    get_Object_in_Spherica_Position(C_SphericalPoint&): PrivateScope, Public, HideBySig
+    set_Object_in_Spherica_Position(C_SphericalPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    set_Object_in_Spherica_Position(Double, Double, Double): PrivateScope, Public, HideBySig
+    get_Object_in_Screen_Position(C_Point2DInt&): PrivateScope, Public, HideBySig
+    set_Object_in_Screen_Position(C_Point2DInt IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    set_Object_in_Screen_Position(Int32, Int32): PrivateScope, Public, HideBySig
+    get_Latitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Latitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Longitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Longitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Altitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Altitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Screen_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_Screen_X(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Screen_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Screen_Y(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Get_Range(): PrivateScope, Public, HideBySig
+    Set_Range(Double): PrivateScope, Public, HideBySig
+    Get_Azimuth(): PrivateScope, Public, HideBySig
+    Set_Azimuth(Double): PrivateScope, Public, HideBySig
+    get_Screen_in_UTM_Position(C_UTM_Coordinates&): PrivateScope, Public, HideBySig
+    set_Screen_in_UTM_Position(C_UTM_Coordinates IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    set_Screen_in_UTM_Position(Double, Double): PrivateScope, Public, HideBySig
+    get_Screen_in_UTM_North(): PrivateScope, Public, HideBySig
+    set_Screen_in_UTM_North(Double): PrivateScope, Public, HideBySig
+    get_Radar_in_UTM_Position(C_UTM_Coordinates&): PrivateScope, Public, HideBySig
+    set_Radar_in_UTM_Position(C_UTM_Coordinates IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    set_Radar_in_UTM_Position(Double, Double, Double): PrivateScope, Public, HideBySig
+    get_Radar_in_UTM_North(): PrivateScope, Public, HideBySig
+    set_Radar_in_UTM_North(Double): PrivateScope, Public, HideBySig
+    get_Meter_Per_Pixel(): PrivateScope, Public, HideBySig
+    set_Meter_Per_Pixel(Double): PrivateScope, Public, HideBySig
+    Line_point_projection(C_Position&, C_Position IsByValue, C_Position IsByValue): PrivateScope, Public, HideBySig
+    Line_angle(C_Position IsByValue, C_Position IsByValue): PrivateScope, Public, HideBySig
+    Maximal_projected_distanc(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Distance_To(C_Position IsByValue): PrivateScope, Public, HideBySig
+    Azimuth_To(C_Position IsByValue): PrivateScope, Public, HideBySig
+    Calc_Left_Point_Of_Line(C_CartesianPoint&): PrivateScope, Public, HideBySig
+    Calc_Right_Point_Of_Line(C_CartesianPoint&): PrivateScope, Public, HideBySig
+    Distance_between_Two_Phi(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    DeltaFunction(C_Position IsImplicitlyDereferenced, Double): PrivateScope, Public, HideBySig
+    RnrFunction(C_Position IsImplicitlyDereferenced, Double): PrivateScope, Public, HideBySig
+    RlfFunction(Double): PrivateScope, Public, HideBySig
+    op_Assign(Int32* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Assign(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_AdditionAssignment(C_SphericalPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_AdditionAssignment(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_SubtractionAssignment(C_CartesianPoint IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    op_Subtraction(C_CartesianPoint&, C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+Class C_Data_Recording: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    set_Data_Recording(T_SENSOR_data, T_TARGETS_data, T_Trajectories_): PrivateScope, Public, HideBySig
+    get_Radar_Massage(): PrivateScope, Public, HideBySig
+    set_Radar_Massage(T_SENSOR_data, T_TARGETS_data): PrivateScope, Public, HideBySig
+    set_Radar_Massage(T_Radar_Massage*): PrivateScope, Public, HideBySig
+    get_Trajectories(): PrivateScope, Public, HideBySig
+    set_Trajectories(T_Trajectories_): PrivateScope, Public, HideBySig
+    Add_Detection(T_TARGETS_data&): PrivateScope, Public, HideBySig
+    Add_Detection(Double, Double, Double, Double): PrivateScope, Public, HideBySig
+    Initialize_noise_Of_Targets(): PrivateScope, Public, HideBySig
+    Restart(): PrivateScope, Public, HideBySig
+    op_Assign(C_Data_Recording IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+Class C_Detections: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Set_Screen_In_UTM_Origin(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Set_Radar_In_UTM_Position(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Get_Pylon_1(C_Position&): PrivateScope, Public, HideBySig
+    Get_Pylon_2(C_Position&): PrivateScope, Public, HideBySig
+    Set_Obstacle_Position(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Set_Meter_Per_Pixel(Double): PrivateScope, Public, HideBySig
+    Set_Radar_North(Double): PrivateScope, Public, HideBySig
+    Set_Screen_Position(Int32, Int32): PrivateScope, Public, HideBySig
+    Get_Reliability(): PrivateScope, Public, HideBySig
+    Set_Reliability(Double): PrivateScope, Public, HideBySig
+    Get_Obstacle_Type(): PrivateScope, Public, HideBySig
+    Set_Obstacle_Type(Int32): PrivateScope, Public, HideBySig
+    Get_Matching_Index(): PrivateScope, Public, HideBySig
+    Set_Matching_Index(Int32): PrivateScope, Public, HideBySig
+    Get_Matching_Index_Of_Pylon_1(): PrivateScope, Public, HideBySig
+    Set_Matching_Index_Of_Pylon_1(Int32): PrivateScope, Public, HideBySig
+    Get_Matching_Index_Of_Pylon_2(): PrivateScope, Public, HideBySig
+    Set_Matching_Index_Of_Pylon_2(Int32): PrivateScope, Public, HideBySig
+    op_Assign(C_Detections): PrivateScope, Public, HideBySig, SpecialName
+    Initialize(Panel, C_Position IsImplicitlyDereferenced, Int32, Int32): PrivateScope, Public, HideBySig
+    Load_From_File(basic_fstream<char\,std::char_traits<char> >&): PrivateScope, Public, HideBySig
+    Save_To_File(basic_fstream<char\,std::char_traits<char> >&): PrivateScope, Public, HideBySig
+    Plot_TOM_To_Screen(): PrivateScope, Public, HideBySig
+    Plot_Obstacles_To_Screen(): PrivateScope, Public, HideBySig
+    Plot_Detection_To_Screen(): PrivateScope, Public, HideBySig
+    Plot_Trajectory_To_Screen(Int32, Int32): PrivateScope, Public, HideBySig
+    Plot_Detection_To_Screen_In_Offline_Mode(Int32, Int32): PrivateScope, Public, HideBySig
+    Add_Pylon(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Add_Wire(C_Position IsImplicitlyDereferenced, C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Add_Detection(Double* IsImplicitlyDereferenced, Double* IsImplicitlyDereferenced, Double* IsImplicitlyDereferenced, Double* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Add_Detection(T_PNI&, T_SENSOR_data&): PrivateScope, Public, HideBySig
+    Add_Trajectory(T_Trajectory_&, T_SENSOR_data&): PrivateScope, Public, HideBySig
+    Find_Min_Max(Double* IsImplicitlyDereferenced, Double* IsImplicitlyDereferenced, Double* IsImplicitlyDereferenced, Double* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct T_Radar_Data: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Class C_GUI_Status: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(C_GUI_Status): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    T_GUI_Data* GUI_Data : Public
+    T_DISAPLAY_fields* disaplay_fields : Public
+  Properties:
+    T_TxRx_control TxRx_Control [Int32] 'get ' : 
+    SByte* DETECTIONS_Folder_Of_Viewer 'get set' : 
+    SByte* Viewer_TOM_File_Name 'get set' : 
+    Double Meter_Per_Pixel_Of_Viewer 'get set' : 
+    Double Viewer_GPS_Longitude 'get set' : 
+    Double Viewer_GPS_Latitude 'get set' : 
+    SByte* Simulator_DETECTIONS_Folder_File_Name 'get set' : 
+    SByte* Simulator_EXPERIMENT_Directory_File_Name 'get set' : 
+    SByte* Simulator_TOM_File_Name 'get set' : 
+    Double Meter_Per_Pixel_Of_Simulator 'get set' : 
+    Double Simulator_GPS_Longitude 'get ' : 
+    Double Simulator_GPS_Latitude 'get ' : 
+    Int32 Screen_Width_Of_Viewer 'get set' : 
+    Int32 Screen_Width_Of_Simulator 'get ' : 
+    Int32 Screen_Width 'get set' : 
+    Int32 Wire_Segment_Length_Meter 'get ' : 
+    Int32 Reliability_Threshold 'get ' : 
+    Int32 Radar_Min_Range 'get set' : 
+    Int32 Max_Range_Error_Meter 'get ' : 
+    Int32 False_Alarm_Rate 'get ' : 
+    Int32 Variance_Position_Wires 'get ' : 
+    Boolean Show_Trajectories 'get ' : 
+    Boolean Show_Detections 'get ' : 
+    Boolean Route_New 'get ' : 
+    Int32 Radar_Refresh_Time 'get ' : 
+    Int32 Radar_FOV 'get ' : 
+    Int32 Radar_Range 'get ' : 
+    Int32 Radar_Speed 'get ' : 
+    T_General_Data General_Data 'get ' : 
+    T_Radar_Data Radar_Data 'get ' : 
+  Methods:
+    get_Radar_Data(T_Radar_Data*): PrivateScope, Public, HideBySig, SpecialName
+    get_General_Data(T_General_Data*): PrivateScope, Public, HideBySig, SpecialName
+    get_Radar_Speed(): PrivateScope, Public, HideBySig, SpecialName
+    get_Radar_Range(): PrivateScope, Public, HideBySig, SpecialName
+    get_Radar_FOV(): PrivateScope, Public, HideBySig, SpecialName
+    get_Radar_Refresh_Time(): PrivateScope, Public, HideBySig, SpecialName
+    get_Route_New(): PrivateScope, Public, HideBySig, SpecialName
+    get_Show_Detections(): PrivateScope, Public, HideBySig, SpecialName
+    get_Show_Trajectories(): PrivateScope, Public, HideBySig, SpecialName
+    get_Variance_Position_Wires(): PrivateScope, Public, HideBySig, SpecialName
+    get_False_Alarm_Rate(): PrivateScope, Public, HideBySig, SpecialName
+    get_Max_Range_Error_Meter(): PrivateScope, Public, HideBySig, SpecialName
+    get_Radar_Min_Range(): PrivateScope, Public, HideBySig, SpecialName
+    set_Radar_Min_Range(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Reliability_Threshold(): PrivateScope, Public, HideBySig, SpecialName
+    get_Wire_Segment_Length_Meter(): PrivateScope, Public, HideBySig, SpecialName
+    get_Screen_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Screen_Width(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Screen_Width_Of_Simulator(): PrivateScope, Public, HideBySig, SpecialName
+    get_Screen_Width_Of_Viewer(): PrivateScope, Public, HideBySig, SpecialName
+    set_Screen_Width_Of_Viewer(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Simulator_GPS_Latitude(): PrivateScope, Public, HideBySig, SpecialName
+    get_Simulator_GPS_Longitude(): PrivateScope, Public, HideBySig, SpecialName
+    get_Meter_Per_Pixel_Of_Simulator(): PrivateScope, Public, HideBySig, SpecialName
+    set_Meter_Per_Pixel_Of_Simulator(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Simulator_TOM_File_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Simulator_TOM_File_Name(SByte*): PrivateScope, Public, HideBySig, SpecialName
+    get_Simulator_EXPERIMENT_Directory_File_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Simulator_EXPERIMENT_Directory_File_Name(SByte*): PrivateScope, Public, HideBySig, SpecialName
+    get_Simulator_DETECTIONS_Folder_File_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Simulator_DETECTIONS_Folder_File_Name(SByte*): PrivateScope, Public, HideBySig, SpecialName
+    get_Viewer_GPS_Latitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Viewer_GPS_Latitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Viewer_GPS_Longitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Viewer_GPS_Longitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Meter_Per_Pixel_Of_Viewer(): PrivateScope, Public, HideBySig, SpecialName
+    set_Meter_Per_Pixel_Of_Viewer(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Viewer_TOM_File_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Viewer_TOM_File_Name(SByte*): PrivateScope, Public, HideBySig, SpecialName
+    get_DETECTIONS_Folder_Of_Viewer(): PrivateScope, Public, HideBySig, SpecialName
+    set_DETECTIONS_Folder_Of_Viewer(SByte*): PrivateScope, Public, HideBySig, SpecialName
+    get_TxRx_Control(T_TxRx_control*, Int32): PrivateScope, Public, HideBySig, SpecialName
+    Initialize(): PrivateScope, Public, HideBySig
+    Read_Data_From_File(): PrivateScope, Public, HideBySig
+    Save_Data_To_File(): PrivateScope, Public, HideBySig
+    Find_Delta(C_Point2D&, Double): PrivateScope, Public, HideBySig
+    Update(Int32, T): PrivateScope, Public, HideBySig
+    Update_Debug_SNAPSHOT_Type(E_SNAPSHOT_type): PrivateScope, Public, HideBySig
+    Update_Debug_MATLAB_Script_Index(Int32): PrivateScope, Public, HideBySig
+    Update_Debug_MATLAB_Script(String): PrivateScope, Public, HideBySig
+    Update_Debug_Log_Folder(String): PrivateScope, Public, HideBySig
+    Update_Flash_Controls(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    Calc_Batch_Duartion(): PrivateScope, Public, HideBySig
+    Update_Velocity_Buffers(UInt32): PrivateScope, Public, HideBySig
+    Update_Number_Of_Buffers(UInt32): PrivateScope, Public, HideBySig
+    Update_TxRx_Control(): PrivateScope, Public, HideBySig
+    Update_Maintenance_Controls(Int32, T): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class C_Obstacles_Map: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    System.Drawing.Drawing2D.GraphicsPath TOM_Path : Public
+    System.Drawing.RectangleF point_before_scale : Public
+    System.Drawing.RectangleF point_after_scale : Public
+    ROD_Position.C_Position Screen_Top_Right IsByValue : Public, InitOnly
+    ROD_Position.C_Position Screen_Bottom_Left IsByValue : Public, InitOnly
+  Properties:
+    C_Detections Obstacles [Int32] 'get ' : 
+  Methods:
+    Get_Pylon_1(C_Position&): PrivateScope, Public, HideBySig
+    Get_Pylon_2(C_Position&): PrivateScope, Public, HideBySig
+    Get_Number_Of_Obstacles(): PrivateScope, Public, HideBySig
+    Set_Screen_In_UTM_Origin(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Set_Radar_In_UTM_Position(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Set_Radar_North(Double): PrivateScope, Public, HideBySig
+    Set_Meter_Per_Pixel(Double): PrivateScope, Public, HideBySig
+    Get_Obstacle_Type(): PrivateScope, Public, HideBySig
+    Get_Reliability_Threshold(): PrivateScope, Public, HideBySig
+    Set_Reliability_Threshold(Double): PrivateScope, Public, HideBySig
+    get_Obstacles(Int32): PrivateScope, Public, HideBySig, SpecialName
+    op_Subtraction(C_Obstacles_Map IsImplicitlyDereferenced): PrivateScope, Public, HideBySig, SpecialName
+    Initialize(Panel, C_Position IsImplicitlyDereferenced, Int32, Int32): PrivateScope, Public, HideBySig
+    Load_From_File(SByte*): PrivateScope, Public, HideBySig
+    Save_To_File(SByte*): PrivateScope, Public, HideBySig
+    Create_TOM_Array(): PrivateScope, Public, HideBySig
+    Plot_TOM_To_Screen(): PrivateScope, Public, HideBySig
+    Offset_Array(Single, Single): PrivateScope, Public, HideBySig
+    Update_Scale(Single, Single): PrivateScope, Public, HideBySig
+    Plot_Obstacles_To_Screen(): PrivateScope, Public, HideBySig
+    Add_Pylon(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Add_Wire(C_Position IsImplicitlyDereferenced, C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Is_Empty(): PrivateScope, Public, HideBySig
+    Check_True(): PrivateScope, Public, HideBySig
+    Move_To_Next_Cell(): PrivateScope, Public, HideBySig
+    Restart(): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class C_Radar_Post: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    System.Drawing.Drawing2D.GraphicsPath radar_Path : Public
+    System.Drawing.Drawing2D.Matrix translate_radar_Matrix : Public
+    System.Drawing.Drawing2D.Matrix rotate_radar_Matrix : Public
+    Double base_meter_per_pixel_for_scale : Public
+    System.Drawing.Drawing2D.GraphicsPath detection_Path_Pylon : Public
+    System.Drawing.Drawing2D.GraphicsPath detection_Path_Wire : Public
+    System.Drawing.Drawing2D.Matrix translate_detection_Matrix : Public
+    System.Drawing.Drawing2D.GraphicsPath trajectory_Path_Pylon : Public
+    System.Drawing.Drawing2D.GraphicsPath trajectory_Path_Wire : Public
+    System.Drawing.Drawing2D.Matrix translate_trajectory_Matrix : Public
+    T_SENSOR_data* sensor_data : Public
+  Properties:
+    Double Radar_in_UTM_North 'get ' : 
+    T_SENSOR_data SENSOR_data 'get ' : 
+    C_Detections Current_Detection 'get ' : 
+    C_UTM_Coordinates Radar_Position_In_UTM 'get set' IsByValue : 
+    ROD_Position.C_Position Radar_Position 'get set' IsByValue : 
+  Methods:
+    get_Radar_Position(C_Position&): PrivateScope, Public, HideBySig, SpecialName
+    set_Radar_Position(C_Position IsByValue): PrivateScope, Public, HideBySig, SpecialName
+    get_Radar_Position_In_UTM(C_UTM_Coordinates&): PrivateScope, Public, HideBySig, SpecialName
+    set_Radar_Position_In_UTM(C_UTM_Coordinates IsByValue): PrivateScope, Public, HideBySig, SpecialName
+    get_Current_Detection(): PrivateScope, Public, HideBySig, SpecialName
+    get_SENSOR_data(T_SENSOR_data*): PrivateScope, Public, HideBySig, SpecialName
+    get_Radar_in_UTM_North(): PrivateScope, Public, HideBySig, SpecialName
+    Set_Show_Detections(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Set_Show_Trajectories(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Set_Screen_Coordinates(Int32, Int32): PrivateScope, Public, HideBySig
+    Update_Screen_Position(): PrivateScope, Public, HideBySig
+    Set_Base_Meter_Per_Pixel_For_Scale(Double): PrivateScope, Public, HideBySig
+    Initialize(Panel, C_Position IsImplicitlyDereferenced, Int32, Int32): PrivateScope, Public, HideBySig
+    Update_Meter_Per_Pixel(Double): PrivateScope, Public, HideBySig
+    Update_Screen_in_UTM(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Draw_Arrow_Of_Heading(): PrivateScope, Public, HideBySig
+    Plot_Noice_Route_Of_Radar(): PrivateScope, Public, HideBySig
+    Plot_Detections_To_Screen(): PrivateScope, Public, HideBySig
+    Plot_Trajectories_To_Screen(): PrivateScope, Public, HideBySig
+    Add_Radar_Post(T_Radar_Massage&, T_Trajectories_&): PrivateScope, Public, HideBySig
+    Add_Radar_Post(T_Radar_Massage&): PrivateScope, Public, HideBySig
+    Add_Obstacle(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Add_Detection(Double, Double, Double, Double): PrivateScope, Public, HideBySig
+    Line_angle(C_Position IsImplicitlyDereferenced, C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Distance_To(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Azimuth_To(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Target_is_in_RADAR_FOV(C_Position IsImplicitlyDereferenced, Int32, Int32, Double): PrivateScope, Public, HideBySig
+    Find_Min_Max(Double* IsImplicitlyDereferenced, Double* IsImplicitlyDereferenced, Double* IsImplicitlyDereferenced, Double* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Offset_Radar_Position(Single, Single): PrivateScope, Public, HideBySig
+    Update_Scale(Single, Single): PrivateScope, Public, HideBySig
+    Create_Radar_Shape(): PrivateScope, Public, HideBySig
+    Create_Detection_Shape(): PrivateScope, Public, HideBySig
+    Create_Trajectory_Shape(): PrivateScope, Public, HideBySig
+    Translate_Radar_Shape(Single, Single): PrivateScope, Public, HideBySig
+    Translate_Detection_Shape(Single, Single): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class C_Lat_Lon_Map: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Set_Radar_Post(C_Radar_Post): PrivateScope, Public, HideBySig
+    Set_Step_Radar_Post(C_Radar_Post): PrivateScope, Public, HideBySig
+    Set_Obstacles_Map(C_Obstacles_Map): PrivateScope, Public, HideBySig
+    Set_TOM_Map(C_Obstacles_Map): PrivateScope, Public, HideBySig
+    Set_Video_File_Name(SByte*): PrivateScope, Public, HideBySig
+    Set_Video_Parameters(Int32, Int32): PrivateScope, Public, HideBySig
+    Set_Show_Detections(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Set_Show_Trajectories(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    op_Assign(C_Lat_Lon_Map): PrivateScope, Public, HideBySig, SpecialName
+    Initialize(Panel, Int32, Int32): PrivateScope, Public, HideBySig
+    Initialize(Panel, PictureBox, Int32, Int32): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class C_Radar_Route: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    ROD_Position.C_Position Screen_Top_Right IsByValue : Public, InitOnly
+    ROD_Position.C_Position Screen_Bottom_Left IsByValue : Public, InitOnly
+  Methods:
+    Get_Current_Radar_Position(C_Position&): PrivateScope, Public, HideBySig
+    Get_Current_Radar_Post(): PrivateScope, Public, HideBySig
+    Set_New_Route_Of_Radar(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Set_Data_Of_Radar_Post(C_Lat_Lon_Map): PrivateScope, Public, HideBySig
+    Set_Show_Detections(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Set_Show_Trajectories(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Get_Current_Number_Of_Post_In_Radar_Route(): PrivateScope, Public, HideBySig
+    Set_Screen_Coordinates(Int32, Int32): PrivateScope, Public, HideBySig
+    Set_Base_Meter_Per_Pixel_For_Scale(Double): PrivateScope, Public, HideBySig
+    Initialize(Panel, C_Position IsImplicitlyDereferenced, C_GUI_Status IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Initialize_Screen_Border(): PrivateScope, Public, HideBySig
+    Current_Point_In_Screen(): PrivateScope, Public, HideBySig
+    Load_From_File(SByte*): PrivateScope, Public, HideBySig
+    Save_To_File(SByte*): PrivateScope, Public, HideBySig
+    Update_Meter_Per_Pixel(Double): PrivateScope, Public, HideBySig
+    Update_Screen_in_UTM(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Update_Current_SENSOR_Data_Of_Radar_Post(T_SENSOR_data*): PrivateScope, Public, HideBySig
+    Calc_The_Next_Point(C_Position&): PrivateScope, Public, HideBySig
+    Move_To_Next_Radar_Post(): PrivateScope, Public, HideBySig
+    Plot_Radar_Post(): PrivateScope, Public, HideBySig
+    Add_Radar_Post(C_Data_Recording IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Add_Radar_Post(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Add_Radar_Post(T_Radar_Massage&): PrivateScope, Public, HideBySig
+    Add_Radar_Post(): PrivateScope, Public, HideBySig
+    Add_Obstacle_Position(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Calc_First_Point(): PrivateScope, Public, HideBySig
+    Calc_Detect_Pylon(C_Obstacles_Map IsImplicitlyDereferenced, C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Calc_Detect_Wire(C_Obstacles_Map IsImplicitlyDereferenced, C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Calc_False_Alarm(): PrivateScope, Public, HideBySig
+    Offset_Radar_Position(Single, Single): PrivateScope, Public, HideBySig
+    Update_Scale(Single, Single): PrivateScope, Public, HideBySig
+    Create_Radar_Route_Position(): PrivateScope, Public, HideBySig
+    Is_Empty(): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    Restart(): PrivateScope, Public, HideBySig
+    Add_New_Step_Radar_Post(): PrivateScope, Public, HideBySig
+    Move_To_Next_Step_Radar_Post(): PrivateScope, Public, HideBySig
+    Update_Meter_Per_Pixel_For_Real_Time(Double): PrivateScope, Public, HideBySig
+    Update_Screen_in_UTM_For_Real_Time(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Update_Screen_Position(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class C_RDM: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Initialize(PictureBox): PrivateScope, Public, HideBySig
+    Update_RDM(Point&): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Radar_Viewer.C_Radar_Viewer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Set_Base_Meter_Per_Pixel_For_Scale(Double): PrivateScope, Public, HideBySig
+    Set_Show_Detections(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Set_Show_Trajectories(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Initialize(Panel, C_GUI_Status IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Initialize(Panel, PictureBox, C_GUI_Status IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Clear_Radar_Viewer(): PrivateScope, Public, HideBySig
+    Reset_Radar_Viewer(): PrivateScope, Public, HideBySig
+    Viewer_Step(): PrivateScope, Public, HideBySig
+    Add_Radar_Post(C_Data_Recording): PrivateScope, Public, HideBySig
+    Add_Radar_Post(): PrivateScope, Public, HideBySig
+    Add_Radar_Post(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Load_TOM_From_File(): PrivateScope, Public, HideBySig
+    Load_Detections_From_File(): PrivateScope, Public, HideBySig
+    Set_Viewer_Scale(Double): PrivateScope, Public, HideBySig
+    Set_Scale(Double): PrivateScope, Public, HideBySig
+    Offset_Viewer_Position(Int32, Int32): PrivateScope, Public, HideBySig
+    Erase_Line(): PrivateScope, Public, HideBySig
+    Mouse_Move(Int32, Int32): PrivateScope, Public, HideBySig
+    Add_Pylon(Int32, Int32): PrivateScope, Public, HideBySig
+    Add_Wire(Int32, Int32): PrivateScope, Public, HideBySig
+    Restart_Real_Time(): PrivateScope, Public, HideBySig
+    Restart_Offline(): PrivateScope, Public, HideBySig
+    Clear_Screen(): PrivateScope, Public, HideBySig
+    Create_TOM_Array(): PrivateScope, Public, HideBySig
+    Create_Radar_Route_Position(): PrivateScope, Public, HideBySig
+    Plot_TOM_On_Screen(): PrivateScope, Public, HideBySig
+    Offset_TOM_Array(Single, Single): PrivateScope, Public, HideBySig
+    Offset_Radar_Position(Single, Single): PrivateScope, Public, HideBySig
+    Update_RDM(Point&): PrivateScope, Public, HideBySig
+    Reset_Step_Radar_Position_Real_Time(): PrivateScope, Public, HideBySig
+    Plot_Step_Position_Of_Radar(): PrivateScope, Public, HideBySig
+    Set_Real_Time_Viewer_Scale(Double): PrivateScope, Public, HideBySig
+    Real_Time_Offset_Viewer_Position(Int32, Int32): PrivateScope, Public, HideBySig
+    Set_Step_Viewer_Scale(Double): PrivateScope, Public, HideBySig
+    Set_Step_Radar_Scale(Double): PrivateScope, Public, HideBySig
+    Set_Step_Viewer_Position(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Set_Step_Radar_Position(C_Position IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class C_SYSTEM_status: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    T_SYSTEM_control_0* system_control_0 : Public
+    T_SYSTEM_control_1* system_control_1 : Public
+    T_SNAPSHOT_descriptor* SNAPSHOT_descriptor : Public
+    Int64 Ethernet_speed : Public
+    E_ETEHRNET_STATUS Ethernet_link_status : Public
+    Int32 Ethernet_message_status : Public
+    Int32 Ethernet_server_status : Public
+    Int32 Ethernet_server_on : Public
+    Int32 Ethernet_server_connected_to_client : Public
+    E_MONITOR_OPERATION_MODE Monitor_Operation_mode : Public
+    Boolean Monitor_Operation_Recording : Public
+    Int32 Operation_retry_count : Public
+    Double correction1I : Public
+    C_GUI_Status GUI_Status : Public
+    System.String Message : Public
+  Methods:
+    Initialize(C_GUI_Status): PrivateScope, Public, HideBySig
+    Update_Rx_Correction_I(): PrivateScope, Public, HideBySig
+    System_Health_status(): PrivateScope, Public, HideBySig
+    Update_SNAPSHOT_Descriptor(): PrivateScope, Public, HideBySig
+    Flash_Display_Fields_To_System_Control(): PrivateScope, Public, HideBySig
+    Flash_System_Shadow_To_Display_Fields(): PrivateScope, Public, HideBySig
+    Reset_Rx_Correction(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ARC1_Technician.Display_Polar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Real_Time_Thread: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Get_Message(): PrivateScope, Public, HideBySig
+    Get_Buffer_Short(): PrivateScope, Public, HideBySig
+    Set_Matlab_Script_Name(String): PrivateScope, Public, HideBySig
+    Initialize(C_SYSTEM_status): PrivateScope, Public, HideBySig
+    Socket_Is_Available(): PrivateScope, Public, HideBySig
+    Send_Command_SNAPSHOT(): PrivateScope, Public, HideBySig
+    Read_SNAPSHOT(): PrivateScope, Public, HideBySig
+    Read_Obstacles_Map(SByte*, Int32): PrivateScope, Public, HideBySig
+    PC_Command_Reset_ARC(): PrivateScope, Public, HideBySig
+    PC_Command_Start_Work_CIRC(): PrivateScope, Public, HideBySig
+    PC_Command_Start_Work_HV(): PrivateScope, Public, HideBySig
+    PC_Command_Stop_Work(): PrivateScope, Public, HideBySig
+    Send_System_Control_To_DSP(): PrivateScope, Public, HideBySig
+    If_Calibrator_Calibrate(): PrivateScope, Public, HideBySig
+    If_Probe_Calibrate(): PrivateScope, Public, HideBySig
+    Start_MATLAB_Engine(): PrivateScope, Public, HideBySig
+    Initialize_Computer_Networks(): PrivateScope, Public, HideBySig
+    Scan_ETHERNET_Link(): PrivateScope, Public, HideBySig
+    Process_Snapshot(SByte*): PrivateScope, Public, HideBySig
+    Read_SYSTEM_Status(): PrivateScope, Public, HideBySig
+    Read_Flash(): PrivateScope, Public, HideBySig
+    Flash_Write(): PrivateScope, Public, HideBySig
+    SENSOR_Config(): PrivateScope, Public, HideBySig
+    BOOT_UPLOADER(SByte*, T_BUL_config*): PrivateScope, Public, HideBySig
+    Sending_Command_Get_SNAPSHOT(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ARC1_Technician.Scope: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Clear_data(): PrivateScope, Public, HideBySig
+    plot_data_1a(Double*, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    plot_data_1b(Double*, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    plot_data_2a(Double*, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    plot_data_2b(Double*, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    show_GPS(String, String, String, String): PrivateScope, Public, HideBySig
+    set_mode(E_LEGEND_MODE): PrivateScope, Public, HideBySig
+    Scope_Load(Object, EventArgs): PrivateScope, Public, HideBySig
+Class ARC1_Technician.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ARC1_Technician.Recovery_Flight: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Main_Thread: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Initialize(MyForm, C_SYSTEM_status, C_GUI_Status): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ARC1_Technician.Loading_Page: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

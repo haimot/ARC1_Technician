@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Lat_Lon_Map">
+      <UniqueIdentifier>{aa48b39a-8940-40b1-a2c7-f907cfc9b461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lat_Lon_Map">
+      <UniqueIdentifier>{1558eaf9-b608-4fff-bb08-c6caf2afe4c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Obstacles_Map">
+      <UniqueIdentifier>{22d6e681-67cf-488b-8b27-ba0ec9dffe76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Radar_Route">
+      <UniqueIdentifier>{ea2bebd6-6932-4974-915f-1493d3dc9d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Obstacles_Map">
+      <UniqueIdentifier>{be51ccef-bc95-4952-bff1-f36fac2e8205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Radar_Route">
+      <UniqueIdentifier>{dcd55bd4-cd25-489b-bd31-296c96db6feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ROD_Position">
+      <UniqueIdentifier>{7b60ccbc-f949-4d1c-b65c-2ff23dcb17fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ROD_Position">
+      <UniqueIdentifier>{6e35d0c3-ecbc-4069-b254-271320dca28c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data_Recording">
+      <UniqueIdentifier>{c7c3cf21-95d0-4cfa-b700-c9e414a8373c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data_Recording">
+      <UniqueIdentifier>{07202f61-3ea5-49d5-95e3-8b93dfa51350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RDM">
+      <UniqueIdentifier>{12c04dda-320f-411c-8f6a-50e0f65afb8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RDM">
+      <UniqueIdentifier>{e0977202-3d47-46b6-9e4f-61c51907fe29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUI_Data_Interface">
+      <UniqueIdentifier>{c10c1983-ea88-4bee-afd9-c02475178f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI_Data_Interface">
+      <UniqueIdentifier>{55ea11ad-6fac-498e-9c55-a6c475792537}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C_CartesianPoint.h">
+      <Filter>Header Files\ROD_Position</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Point2D.h">
+      <Filter>Header Files\ROD_Position</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Point2DInt.h">
+      <Filter>Header Files\ROD_Position</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Position.h">
+      <Filter>Header Files\ROD_Position</Filter>
+    </ClInclude>
+    <ClInclude Include="C_SphericalPoint.h">
+      <Filter>Header Files\ROD_Position</Filter>
+    </ClInclude>
+    <ClInclude Include="C_UTM_Coordinates.h">
+      <Filter>Header Files\ROD_Position</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Detections.h">
+      <Filter>Header Files\Obstacles_Map</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Obstacles_Map.h">
+      <Filter>Header Files\Obstacles_Map</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Calibrator.h">
+      <Filter>Header Files\Data_Recording</Filter>
+    </ClInclude>
+    <ClInclude Include="T_PNI.h">
+      <Filter>Header Files\Data_Recording</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Radar_Massage.h">
+      <Filter>Header Files\Data_Recording</Filter>
+    </ClInclude>
+    <ClInclude Include="T_SENSOR_data.h">
+      <Filter>Header Files\Data_Recording</Filter>
+    </ClInclude>
+    <ClInclude Include="T_TARGETS_data.h">
+      <Filter>Header Files\Data_Recording</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Data_Recording.h">
+      <Filter>Header Files\Data_Recording</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Lat_Lon_Map.h">
+      <Filter>Header Files\Lat_Lon_Map</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Radar_Post.h">
+      <Filter>Header Files\Radar_Route</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Radar_Route.h">
+      <Filter>Header Files\Radar_Route</Filter>
+    </ClInclude>
+    <ClInclude Include="C_SCREEN_VIDEO.h">
+      <Filter>Header Files\Radar_Route</Filter>
+    </ClInclude>
+    <ClInclude Include="C_RDM.h">
+      <Filter>Header Files\RDM</Filter>
+    </ClInclude>
+    <ClInclude Include="T_SYSTEM_control_0.h">
+      <Filter>Header Files\RDM</Filter>
+    </ClInclude>
+    <ClInclude Include="T_CHAB_STATES.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_DET_algorithms.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_DET_STATES.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_PROBE_test.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Radar_Data.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_TGT_calibrate.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_TxRx_control.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="C_GUI_Status.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="dp_cplx.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_DEBUG_fields.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_FLASH_fields.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_General_Data.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_GUI_Data.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_MAINTENANCE_fields.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Simulator_Data.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Viewer_Data.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="T_DISAPLAY_fields.h">
+      <Filter>Header Files\GUI_Data_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Radar_Viewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T_RecyclingFifo.h">
+      <Filter>Header Files\Data_Recording</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Trajectories.h">
+      <Filter>Header Files\Data_Recording</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Trajectory.h">
+      <Filter>Header Files\Data_Recording</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C_CartesianPoint.cpp">
+      <Filter>Source Files\ROD_Position</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Point2D.cpp">
+      <Filter>Source Files\ROD_Position</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Point2DInt.cpp">
+      <Filter>Source Files\ROD_Position</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Position.cpp">
+      <Filter>Source Files\ROD_Position</Filter>
+    </ClCompile>
+    <ClCompile Include="C_SphericalPoint.cpp">
+      <Filter>Source Files\ROD_Position</Filter>
+    </ClCompile>
+    <ClCompile Include="C_UTM_Coordinates.cpp">
+      <Filter>Source Files\ROD_Position</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Detections.cpp">
+      <Filter>Source Files\Obstacles_Map</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Obstacles_Map.cpp">
+      <Filter>Source Files\Obstacles_Map</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Data_Recording.cpp">
+      <Filter>Source Files\Data_Recording</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Lat_Lon_Map.cpp">
+      <Filter>Source Files\Lat_Lon_Map</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Radar_Post.cpp">
+      <Filter>Source Files\Radar_Route</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Radar_Route.cpp">
+      <Filter>Source Files\Radar_Route</Filter>
+    </ClCompile>
+    <ClCompile Include="C_SCREEN_VIDEO.cpp">
+      <Filter>Source Files\Radar_Route</Filter>
+    </ClCompile>
+    <ClCompile Include="C_RDM.cpp">
+      <Filter>Source Files\RDM</Filter>
+    </ClCompile>
+    <ClCompile Include="C_GUI_Status.cpp">
+      <Filter>Source Files\GUI_Data_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Radar_Viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
